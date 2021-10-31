@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9034b6b5de1308545b4c2b8033e3d73a, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  _name: qwe
+  _name: "\u041A\u043E\u0440\u0438\u0447\u043D\u0435\u0432\u044B\u0439"
   _icon: {fileID: 21300000, guid: d019be3f69e3f9c499d2ac4de287da7d, type: 3}
+  _bottle: {fileID: 6549076328723675709, guid: 1932c03d15ecbe84ebe9e8fb76d7b21f, type: 3}
+  _color: {r: 0.64705884, g: 0.16470589, b: 0.16470589, a: 0}
