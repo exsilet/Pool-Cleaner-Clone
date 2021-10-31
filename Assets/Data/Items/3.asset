@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9034b6b5de1308545b4c2b8033e3d73a, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  _name: sfgd
+  _name: "\u0417\u0435\u043B\u0435\u043D\u044B\u0439"
   _icon: {fileID: 21300000, guid: 7f305da70d7720d4da7efe39b9c2e039, type: 3}
+  _bottle: {fileID: 6549076328723675709, guid: 1932c03d15ecbe84ebe9e8fb76d7b21f, type: 3}
+  _color: {r: 0, g: 0.5019608, b: 0, a: 0}

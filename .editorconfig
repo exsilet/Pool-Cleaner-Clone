@@ -1,0 +1,184 @@
+﻿# editorconfig.org
+
+# самый верхний файл EditorConfig
+корень = правда
+
+# Настройки по умолчанию:
+# Новая строка в конце каждого файла
+# Используйте 4 пробела в качестве отступа
+[ * ]
+insert_final_newline = true
+indent_style = пробел
+indent_size = 4
+trim_trailing_whitespace = правда
+
+[ project.json ]
+indent_size = 2
+
+# C # файлы
+[ * .cs ]
+# Настройки новой линии
+csharp_new_line_before_open_brace = все
+csharp_new_line_before_else = правда
+csharp_new_line_before_catch = правда
+csharp_new_line_before_finally = правда
+csharp_new_line_before_members_in_object_initializers = правда
+csharp_new_line_before_members_in_anonymous_types = правда
+csharp_new_line_between_query_expression_clauses = правда
+
+# Настройки отступа
+csharp_indent_block_contents = правда
+csharp_indent_braces = ложь
+csharp_indent_case_contents = правда
+csharp_indent_case_contents_when_block = правда
+csharp_indent_switch_labels = правда
+csharp_indent_labels = one_less_than_current
+
+# Настройки модификатора
+csharp_preferred_modifier_order = общедоступный, частный, защищенный, внутренний, статический, внешний, новый, виртуальный, абстрактный, запечатанный, переопределить, только для чтения, небезопасный, изменчивый, асинхронный: предложение
+
+# избегайте этого. без крайней необходимости
+dotnet_style_qualification_for_field = false: предложение
+dotnet_style_qualification_for_property = false: предложение
+dotnet_style_qualification_for_method = false: предложение
+dotnet_style_qualification_for_event = false: предложение
+
+# Типы: используйте ключевые слова вместо типов BCL и разрешайте var только тогда, когда тип ясен
+csharp_style_var_for_built_in_types = false: предложение
+csharp_style_var_when_type_is_apparent = false: нет
+csharp_style_var_elsewhere = false: предложение
+dotnet_style_predefined_type_for_locals_parameters_members = true: предложение
+dotnet_style_predefined_type_for_member_access = true: предложение
+
+# присвоить имя всем постоянным полям с помощью PascalCase
+dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = предложение
+dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols   = constant_fields
+dotnet_naming_rule.constant_fields_should_be_pascal_case.style     = pascal_case_style
+dotnet_naming_symbols.constant_fields.applicable_kinds    = поле
+dotnet_naming_symbols.constant_fields.required_modifiers = const
+dotnet_naming_style.pascal_case_style.capitalization = pascal_case
+
+# статические поля должны иметь префикс s_
+dotnet_naming_rule.static_fields_should_have_prefix.severity = предложение
+dotnet_naming_rule.static_fields_should_have_prefix.symbols   = static_fields
+dotnet_naming_rule.static_fields_should_have_prefix.style     = static_prefix_style
+dotnet_naming_symbols.static_fields.applicable_kinds    = поле
+dotnet_naming_symbols.static_fields.required_modifiers = статический
+dotnet_naming_symbols.static_fields.applicable_accessabilities = private,  internal,  private_protected
+dotnet_naming_style.static_prefix_style.required_prefix = s_
+dotnet_naming_style.static_prefix_style.capitalization = Camel_case 
+
+# внутренние и частные поля должны быть _camelCase
+dotnet_naming_rule.camel_case_for_private_internal_fields.severity = предложение
+dotnet_naming_rule.camel_case_for_private_internal_fields.symbols   = private_internal_fields
+dotnet_naming_rule.camel_case_for_private_internal_fields.style     = camel_case_underscore_style
+dotnet_naming_symbols.private_internal_fields.applicable_kinds = поле
+dotnet_naming_symbols.private_internal_fields.applicable_accessabilities = private,  internal
+dotnet_naming_style.camel_case_underscore_style.required_prefix = _
+dotnet_naming_style.camel_case_underscore_style.capitalization = Camel_case 
+
+# Значения стиля кода по умолчанию
+csharp_using_directive_placement = external_namespace: предложение
+dotnet_sort_system_directives_first = истина
+csharp_prefer_braces = true: рефакторинг
+csharp_preserve_single_line_blocks = true: нет
+csharp_preserve_single_line_statements = false: нет
+csharp_prefer_static_local_function = true: предложение
+csharp_prefer_simple_using_statement = false: нет
+csharp_style_prefer_switch_expression = true: предложение
+
+# Качество кода
+dotnet_style_readonly_field = true: предложение
+dotnet_code_quality_unused_parameters = non_public: предложение
+
+# Настройки на уровне выражения
+dotnet_style_object_initializer = true: предложение
+dotnet_style_collection_initializer = true: предложение
+dotnet_style_explicit_tuple_names = true: предложение
+dotnet_style_coalesce_expression = true: предложение
+dotnet_style_null_propagation = true: предложение
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true: предложение
+dotnet_style_prefer_inferred_tuple_names = true: предложение
+dotnet_style_prefer_inferred_anonymous_type_member_names = true: предложение
+dotnet_style_prefer_auto_properties = true: предложение
+dotnet_style_prefer_conditional_expression_over_assignment = true: рефакторинг
+dotnet_style_prefer_conditional_expression_over_return = true: рефакторинг
+csharp_prefer_simple_default_expression = true: предложение
+
+# Члены с телом выражения
+csharp_style_expression_bodied_methods = true: рефакторинг
+csharp_style_expression_bodied_constructors = true: рефакторинг
+csharp_style_expression_bodied_operators = true: рефакторинг
+csharp_style_expression_bodied_properties = true: рефакторинг
+csharp_style_expression_bodied_indexers = true: рефакторинг
+csharp_style_expression_bodied_accessors = true: рефакторинг
+csharp_style_expression_bodied_lambdas = true: рефакторинг
+csharp_style_expression_bodied_local_functions = true: рефакторинг
+
+# Соответствие шаблону
+csharp_style_pattern_matching_over_is_with_cast_check = true: предложение
+csharp_style_pattern_matching_over_as_with_null_check = true: предложение
+csharp_style_inlined_variable_declaration = true: предложение
+
+# Настройки нулевой проверки
+csharp_style_throw_expression = true: предложение
+csharp_style_conditional_delegate_call = true: предложение
+
+# Другие особенности
+csharp_style_prefer_index_operator = false: нет
+csharp_style_prefer_range_operator = false: нет
+csharp_style_pattern_local_over_anonymous_function = false: нет
+
+# Настройки пространства
+csharp_space_after_cast = ложь
+csharp_space_after_colon_in_inheritance_clause = истина
+csharp_space_after_comma = истина
+csharp_space_after_dot = ложь
+csharp_space_after_keywords_in_control_flow_statements = истина
+csharp_space_after_semicolon_in_for_statement = правда
+csharp_space_around_binary_operators = before_and_after
+csharp_space_around_declaration_statements = do_not_ignore
+csharp_space_before_colon_in_inheritance_clause = истина
+csharp_space_before_comma = ложь
+csharp_space_before_dot = ложь
+csharp_space_before_open_square_brackets = ложь
+csharp_space_before_semicolon_in_for_statement = ложь
+csharp_space_between_empty_square_brackets = ложь
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = ложь
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_parentheses = ложь
+csharp_space_between_square_brackets = ложь
+
+# Анализаторы
+dotnet_code_quality.ca1802.api_surface = частный,  внутренний
+
+# Файлы C ++
+[ * . {cpp, h, in} ]
+curly_bracket_next_line = правда
+indent_brace_style = Аллман
+
+# Файлы проекта Xml
+[ * . {csproj, vcxproj, vcxproj.filters, proj, nativeproj, locproj} ]
+indent_size = 2
+
+# Файлы сборки Xml
+[ * .builds ]
+indent_size = 2
+
+# Xml файлы
+[ * . {xml, stylecop, resx, набор правил} ]
+indent_size = 2
+
+# Файлы конфигурации Xml
+[ * . {props, target, config, nuspec} ]
+indent_size = 2
+
+# Скрипты оболочки
+[ * .sh ]
+end_of_line = lf
+[ * . {cmd, bat} ]
+end_of_line = crlf
