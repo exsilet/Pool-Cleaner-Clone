@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 7116250064999899103}
   - component: {fileID: 2675307966669296321}
   m_Layer: 0
-  m_Name: Bottle
+  m_Name: BigBottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,6 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10dadc118da325d4e977a242558742d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _water: {fileID: 0}
 --- !u!95 &2675307966669296321
 Animator:
   serializedVersion: 3
