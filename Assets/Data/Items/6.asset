@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: "\u0411\u0435\u043B\u044B\u0439"
   _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  _bottle: {fileID: 6549076328723675709, guid: 1932c03d15ecbe84ebe9e8fb76d7b21f, type: 3}
+  _bottle: {fileID: 4680892766072319427, guid: 6db7ce3366578cf488c89a1df48ccbf4, type: 3}
   _color: {r: 1, g: 1, b: 1, a: 0}
