@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public class Bottle : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _water;
+    [SerializeField] private GameObject _waterActiv;
 
     private Animator _animator;
     private MeshRenderer _color;
@@ -21,6 +22,7 @@ public class Bottle : MonoBehaviour
 
     public void PourLiquid()
     {
+        _waterActiv.SetActive(true);
         _water.Play();
     }
 

@@ -209,7 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10dadc118da325d4e977a242558742d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _water: {fileID: 6222940056878949696}
+  _water: {fileID: 2840639820704085521, guid: 9a74909ab094a7b438f2086b5b493f69, type: 3}
+  _waterActiv: {fileID: 2840639820704085535, guid: 9a74909ab094a7b438f2086b5b493f69,
+    type: 3}
 --- !u!95 &4555315675249853759
 Animator:
   serializedVersion: 3

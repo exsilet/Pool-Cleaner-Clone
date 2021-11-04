@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9034b6b5de1308545b4c2b8033e3d73a, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
-  _name: "\u0411\u0435\u043B\u044B\u0439"
+  _name: "\u042F\u0440\u043A\u043E-\u0440\u043E\u0437\u043E\u0432\u044B\u0439"
   _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  _bottle: {fileID: 4680892766072319427, guid: 6db7ce3366578cf488c89a1df48ccbf4, type: 3}
-  _color: {r: 1, g: 1, b: 1, a: 0}
+  _bottle: {fileID: 5669953813915296214, guid: c461a930933ddc243b14aaf120e7121b, type: 3}
+  _color: {r: 1, g: 0.4117647, b: 0.7058824, a: 0}

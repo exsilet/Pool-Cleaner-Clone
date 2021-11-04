@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -9,6 +10,8 @@ public class InventoryCell : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     public event Action Ejecting;
 
     [SerializeField] private Image _iconImage;
+    //[SerializeField] private AssetItem CurrentItem;
+    //[SerializeField] private List<AssetItem> _items;
 
     private CanvasGroup _canvasGroup;
     private Transform _draggingParent;
@@ -19,6 +22,23 @@ public class InventoryCell : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     {
         _canvasGroup = GetComponent<CanvasGroup>();
     }
+
+    //public void UpdateCell()
+    //{
+    //    for (int i = 0; i < _items.Count; i++)
+    //    {
+    //        if (_items[i] && _items[i].UIIcon)
+    //        {
+    //            _iconImage.sprite = _items[i].UIIcon;
+    //            _iconImage.color = Color.white;
+    //        }
+    //        else
+    //        {
+    //            _iconImage.sprite = null;
+    //            _iconImage.color = Color.clear;
+    //        }
+    //    }
+    //}
 
     public void Init(Transform draggingParent)
     {
@@ -69,7 +89,7 @@ public class InventoryCell : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         {
             InsertInGrid();
             Eject();
-        }     
+        }
     }
 
     public void Eject()
