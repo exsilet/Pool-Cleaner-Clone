@@ -142,7 +142,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0c6c1ca0ce5486841a17b2805628594f, type: 2}
+  - {fileID: 2100000, guid: 6ea09e2391ef07441834388b88ec5167, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -223,7 +223,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0c6c1ca0ce5486841a17b2805628594f, type: 2}
+  - {fileID: 2100000, guid: 6ea09e2391ef07441834388b88ec5167, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -254,10 +254,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5036265042182060908}
-  - component: {fileID: 2614600189780208482}
-  - component: {fileID: -4179823267933485540}
+  - component: {fileID: -4591313107607470742}
+  - component: {fileID: -1772250802389261127}
   m_Layer: 0
-  m_Name: YelowBottle
+  m_Name: GreyBottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,7 +279,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}
---- !u!95 &2614600189780208482
+--- !u!95 &-4591313107607470742
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -298,7 +298,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-4179823267933485540
+--- !u!114 &-1772250802389261127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -374,7 +374,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0c6c1ca0ce5486841a17b2805628594f, type: 2}
+  - {fileID: 2100000, guid: 6ea09e2391ef07441834388b88ec5167, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

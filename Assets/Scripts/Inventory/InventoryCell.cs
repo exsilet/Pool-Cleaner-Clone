@@ -23,23 +23,6 @@ public class InventoryCell : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         _canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    //public void UpdateCell()
-    //{
-    //    for (int i = 0; i < _items.Count; i++)
-    //    {
-    //        if (_items[i] && _items[i].UIIcon)
-    //        {
-    //            _iconImage.sprite = _items[i].UIIcon;
-    //            _iconImage.color = Color.white;
-    //        }
-    //        else
-    //        {
-    //            _iconImage.sprite = null;
-    //            _iconImage.color = Color.clear;
-    //        }
-    //    }
-    //}
-
     public void Init(Transform draggingParent)
     {
         _draggingParent = draggingParent;

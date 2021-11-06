@@ -6,6 +6,7 @@ public class Menu : MonoBehaviour
 {
     [SerializeField] private GameObject _firstChemical;
     [SerializeField] private GameObject _secondChemical;
+    [SerializeField] private GameObject _panelInventory;
 
     //private void Start()
     //{
