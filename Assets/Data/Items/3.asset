@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   _name: "\u0417\u0435\u043B\u0435\u043D\u044B\u0439"
-  _icon: {fileID: 21300000, guid: 7f305da70d7720d4da7efe39b9c2e039, type: 3}
-  _bottle: {fileID: 5669953813915296214, guid: 4742e080ff44e5847a28b197f0352031, type: 3}
-  _color: {r: 0, g: 0.5019608, b: 0, a: 0}
+  _icon: {fileID: 21300000, guid: 495e67b49c3ab6e46a1cf06cc340e3c1, type: 3}
+  _bottle: {fileID: 9015777984182441830, guid: 4742e080ff44e5847a28b197f0352031, type: 3}
+  _color: {r: 0, g: 1, b: 0, a: 1}

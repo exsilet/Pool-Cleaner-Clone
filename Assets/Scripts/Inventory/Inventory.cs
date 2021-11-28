@@ -4,8 +4,6 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] private List<AssetItem> _items;
-    [SerializeField] private GameObject _itemPregfab;
-
     [SerializeField] private InventoryCell _inventoryCellTemplate;
     [SerializeField] private Transform _containerSmallItem;
     [SerializeField] private Transform _containerBigItem;
@@ -13,7 +11,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Transform _spawn;
     [SerializeField] private Bucket _bucket;
 
-    private void OnEnable()
+    private void Start()
     {
         Render(_items);
     }
@@ -27,20 +25,16 @@ public class Inventory : MonoBehaviour
         {
             if (item.UIitem.name.StartsWith("Big"))
             {
-                CraftinItem(item, _containerSmallItem);
+                CreationItem(item, _containerBigItem);
             }
-        });
-
-        items.ForEach(item =>
-        {
-            if (item.UIitem.name.StartsWith("Small"))
+            else
             {
-                CraftinItem(item, _containerBigItem);
+                CreationItem(item, _containerSmallItem);
             }
         });
     }
 
-    private void CraftinItem(AssetItem item, Transform container)
+    private void CreationItem(AssetItem item, Transform container)
     {
         var cell = Instantiate(_inventoryCellTemplate, container);
         cell.Init(_draggingParent);

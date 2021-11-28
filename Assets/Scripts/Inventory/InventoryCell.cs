@@ -7,17 +7,16 @@ using UnityEngine.UI;
 [RequireComponent(typeof(CanvasGroup))]
 public class InventoryCell : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
-    public event Action Ejecting;
-
     [SerializeField] private Image _iconImage;
-    //[SerializeField] private AssetItem CurrentItem;
-    //[SerializeField] private List<AssetItem> _items;
+    [SerializeField] private Image _background;
 
     private CanvasGroup _canvasGroup;
     private Transform _draggingParent;
     private Transform _originalParent;
     private GameObject _placeholder;
 
+    public event Action Ejecting;
+    
     private void Awake()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
@@ -36,6 +35,7 @@ public class InventoryCell : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        _background.enabled = false;
         _placeholder = new GameObject();
         _placeholder.transform.SetParent(_originalParent);
 
@@ -49,11 +49,11 @@ public class InventoryCell : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         {
             LayoutElement layout = _placeholder.AddComponent<LayoutElement>();
             Image element = _placeholder.AddComponent<Image>();
-            layout.transform.localScale = new Vector3(1, 1, 1);
+            element.color = new Color(0.8627451f, 0.8627451f, 0.8627451f);
+            _placeholder.transform.localScale = new Vector3(1, 1, 1);
+            element.sprite = _background.sprite;
             layout.preferredHeight = this.GetComponent<LayoutElement>().preferredHeight;
             layout.preferredWidth = this.GetComponent<LayoutElement>().preferredWidth;
-            layout.flexibleWidth = 0;
-            layout.flexibleHeight = 0;
         }
     }
 
@@ -86,6 +86,7 @@ public class InventoryCell : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         transform.SetSiblingIndex(_placeholder.transform.GetSiblingIndex());
         Destroy(_placeholder);
         _canvasGroup.blocksRaycasts = true;
+        _background.enabled = true;
     }
 
     private bool In(RectTransform originalParent)

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 165f40cdb1dfc8741a05ca2035daffc2, type: 3}
+  m_Name: Dark
+  m_EditorClassIdentifier: 
+  _createMaterial: {fileID: 2100000, guid: 9365289c64fdb4b4a9113702ef3a8e82, type: 2}
+  _icon1: {fileID: 21300000, guid: c59e48f1a4a67d84592d29fe12206768, type: 3}
+  _icon2: {fileID: 21300000, guid: f96773362f28e7247baf85f4ae2b9092, type: 3}
